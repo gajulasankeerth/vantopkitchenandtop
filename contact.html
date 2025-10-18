@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Vantop Kitchen & Top</title>
+  <meta name="description" content="Get in touch with Vantop Kitchen & Top for premium interior design, modular kitchens, and complete home solutions.">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .font-playfair { font-family: 'Playfair Display', serif; }
+    .animate-fade-in { animation: fadeIn 1s ease-in-out; }
+    .animate-slide-in { animation: slideIn 1s ease-in-out; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes slideIn { from { opacity: 0; transform: translateX(-30px); } to { opacity: 1; transform: translateX(0); } }
+    .shadow-elegant { box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="min-h-screen bg-white text-gray-800">
+
+  <!-- Navigation -->
+  <header class="fixed w-full bg-white shadow-elegant z-50">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <a href="index.html" class="font-playfair text-2xl font-bold text-gray-900">Vantop Kitchen & Top</a>
+      <ul class="hidden md:flex space-x-8 font-poppins">
+        <li><a href="index.html" class="hover:text-yellow-600">Home</a></li>
+        <li><a href="about.html" class="hover:text-yellow-600">About</a></li>
+        <li><a href="services.html" class="hover:text-yellow-600">Services</a></li>
+        <li><a href="projects.html" class="hover:text-yellow-600">Projects</a></li>
+        <li><a href="testimonials.html" class="hover:text-yellow-600">Testimonials</a></li>
+        <li><a href="contact.html" class="text-yellow-600 font-semibold">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="pt-32 pb-16 bg-gray-50 text-center">
+    <div class="container mx-auto px-4">
+      <h1 class="font-playfair text-5xl md:text-6xl font-bold text-gray-900 mb-6 animate-fade-in">Contact Us</h1>
+      <div class="w-24 h-1 bg-yellow-600 mx-auto mb-6"></div>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto animate-fade-in">Get in touch for a free consultation and quote</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <!-- Contact Info -->
+        <div class="space-y-8 animate-slide-in">
+          <h2 class="font-playfair text-3xl font-bold text-gray-900 mb-8">Get in Touch</h2>
+          <div class="space-y-6">
+
+            <div class="flex items-start space-x-4">
+              <div class="bg-yellow-100 p-3 rounded-full text-yellow-600">📍</div>
+              <div>
+                <h3 class="font-semibold text-gray-900 mb-1">Address</h3>
+                <p class="text-gray-600">
+                  123 Design Avenue<br>
+                  Interior District, City 12345
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div class="bg-yellow-100 p-3 rounded-full text-yellow-600">📞</div>
+              <div>
+                <h3 class="font-semibold text-gray-900 mb-1">Phone</h3>
+                <p class="text-gray-600">(555) 789-0123</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div class="bg-yellow-100 p-3 rounded-full text-yellow-600">✉️</div>
+              <div>
+                <h3 class="font-semibold text-gray-900 mb-1">Email</h3>
+                <p class="text-gray-600">info@vantopkitchenandtop.com</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div class="bg-yellow-100 p-3 rounded-full text-yellow-600">⏰</div>
+              <div>
+                <h3 class="font-semibold text-gray-900 mb-1">Operating Hours</h3>
+                <p class="text-gray-600">
+                  Monday - Friday: 9:00 AM - 6:00 PM<br>
+                  Saturday: 10:00 AM - 4:00 PM
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="animate-fade-in">
+          <form id="contactForm" class="space-y-6">
+            <div>
+              <label for="name" class="font-medium text-gray-900 mb-2 block">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" class="w-full border border-gray-300 rounded-lg p-3" required>
+            </div>
+
+            <div>
+              <label for="email" class="font-medium text-gray-900 mb-2 block">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" class="w-full border border-gray-300 rounded-lg p-3" required>
+            </div>
+
+            <div>
+              <label for="message" class="font-medium text-gray-900 mb-2 block">Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="Tell us about your project..." class="w-full border border-gray-300 rounded-lg p-3 resize-none" required></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-yellow-600 text-white py-4 rounded-lg shadow-elegant hover:bg-yellow-500 transition">Send Message</button>
+          </form>
+
+          <p id="formMsg" class="mt-4 text-center text-gray-700 font-semibold"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-10">
+    <div class="container mx-auto text-center px-4">
+      <p class="text-sm mb-4">Follow us on:</p>
+      <div class="flex justify-center space-x-6 mb-6">
+        <a href="#" class="hover:text-yellow-500">Instagram</a>
+        <a href="#" class="hover:text-yellow-500">Facebook</a>
+        <a href="#" class="hover:text-yellow-500">WhatsApp</a>
+      </div>
+      <p class="text-sm text-gray-400">© 2025 Vantop Kitchen & Top. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Form Validation JS -->
+  <script>
+    const form = document.getElementById('contactForm');
+    const formMsg = document.getElementById('formMsg');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = form.name.value.trim();
+      const email = form.email.value.trim();
+      const message = form.message.value.trim();
+
+      if (!name || !email || !message) {
+        formMsg.textContent = "Please fill in all fields.";
+        formMsg.style.color = "red";
+        return;
+      }
+
+      formMsg.textContent = "Thank you! We'll get back to you soon.";
+      formMsg.style.color = "green";
+      form.reset();
+    });
+  </script>
+</body>
+</html>

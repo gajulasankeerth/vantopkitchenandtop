@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Vantop Kitchen & Top</title>
+    <meta
+      name="description"
+      content="Learn about Vantop Kitchen & Top — a leading interior design and modular kitchen company with 10+ years of expertise and 500+ happy clients."
+    />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .font-playfair {
+        font-family: "Playfair Display", serif;
+      }
+      .animate-fade-in {
+        animation: fadeIn 1s ease-in-out;
+      }
+      .animate-slide-in {
+        animation: slideIn 1s ease-in-out;
+      }
+      .animate-scale-in {
+        animation: scaleIn 0.8s ease-in-out;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes slideIn {
+        from {
+          opacity: 0;
+          transform: translateX(-30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      @keyframes scaleIn {
+        from {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      .shadow-elegant {
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+
+  <body class="min-h-screen bg-white text-gray-800">
+    <!-- Navigation -->
+    <header class="fixed w-full bg-white shadow-elegant z-50">
+      <nav class="container mx-auto flex justify-between items-center p-4">
+        <a href="index.html" class="font-playfair text-2xl font-bold text-gray-900"
+          >Vantop Kitchen & Top</a
+        >
+        <ul class="hidden md:flex space-x-8 font-poppins">
+          <li><a href="index.html" class="hover:text-yellow-600">Home</a></li>
+          <li><a href="about.html" class="text-yellow-600 font-semibold">About</a></li>
+          <li><a href="services.html" class="hover:text-yellow-600">Services</a></li>
+          <li><a href="projects.html" class="hover:text-yellow-600">Projects</a></li>
+          <li><a href="testimonials.html" class="hover:text-yellow-600">Testimonials</a></li>
+          <li><a href="contact.html" class="hover:text-yellow-600">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 bg-gray-50 text-center">
+      <div class="container mx-auto px-4">
+        <h1 class="font-playfair text-5xl md:text-6xl font-bold text-gray-900 mb-6 animate-fade-in">
+          About Vantop Kitchen & Top
+        </h1>
+        <div class="w-24 h-1 bg-yellow-600 mx-auto mb-6"></div>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto animate-fade-in">
+          Creating beautiful, functional spaces since 2014
+        </p>
+      </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+          <div class="animate-slide-in">
+            <img
+              src="assets/images/expert-team.jpg"
+              alt="Our Expert Team"
+              class="rounded-lg shadow-elegant w-full h-auto object-cover"
+            />
+          </div>
+          <div class="space-y-6 animate-fade-in">
+            <h2 class="font-playfair text-4xl font-bold text-gray-900">Our Story</h2>
+            <p class="leading-relaxed text-gray-700">
+              Vantop Kitchen & Top was founded with a vision to transform ordinary spaces into extraordinary living experiences. With over 10 years of expertise in interior design and modular kitchen solutions, we've helped more than 500 families create their dream homes.
+            </p>
+            <p class="leading-relaxed text-gray-700">
+              Our journey began with a simple belief: every home deserves thoughtful design, premium materials, and flawless craftsmanship. Today, we stand as a trusted name in the industry, known for our commitment to excellence and customer satisfaction.
+            </p>
+            <p class="leading-relaxed text-gray-700">
+              From contemporary modular kitchens to elegant wardrobes and complete interior transformations, we bring your vision to life with precision and passion.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="font-playfair text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Why Choose Us
+          </h2>
+          <div class="w-24 h-1 bg-yellow-600 mx-auto mb-6"></div>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Excellence in every detail, satisfaction in every project
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          <!-- Card 1 -->
+          <div class="bg-white p-8 rounded-lg shadow-elegant text-center animate-scale-in">
+            <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              🏆
+            </div>
+            <h3 class="font-playfair text-xl font-bold text-gray-900 mb-3">
+              10+ Years Experience
+            </h3>
+            <p class="text-sm text-gray-600">
+              A decade of expertise in creating stunning interiors and modular solutions
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white p-8 rounded-lg shadow-elegant text-center animate-scale-in">
+            <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              👨‍👩‍👧‍👦
+            </div>
+            <h3 class="font-playfair text-xl font-bold text-gray-900 mb-3">
+              500+ Happy Clients
+            </h3>
+            <p class="text-sm text-gray-600">
+              Trusted by hundreds of families for their dream home transformations
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white p-8 rounded-lg shadow-elegant text-center animate-scale-in">
+            <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              🎯
+            </div>
+            <h3 class="font-playfair text-xl font-bold text-gray-900 mb-3">
+              Premium Materials
+            </h3>
+            <p class="text-sm text-gray-600">
+              Only the finest quality materials from trusted brands worldwide
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-white p-8 rounded-lg shadow-elegant text-center animate-scale-in">
+            <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              ❤️
+            </div>
+            <h3 class="font-playfair text-xl font-bold text-gray-900 mb-3">
+              Personalized Service
+            </h3>
+            <p class="text-sm text-gray-600">
+              Dedicated attention to every detail, tailored to your unique style
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          <div class="bg-gray-50 p-10 rounded-lg shadow-elegant animate-fade-in">
+            <h3 class="font-playfair text-3xl font-bold text-gray-900 mb-6">
+              Our Mission
+            </h3>
+            <p class="leading-relaxed text-gray-700">
+              To transform houses into dream homes by delivering exceptional interior design and modular solutions that perfectly balance aesthetics, functionality, and quality. We are committed to exceeding client expectations through innovative designs, superior craftsmanship, and personalized service.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 p-10 rounded-lg shadow-elegant animate-fade-in">
+            <h3 class="font-playfair text-3xl font-bold text-gray-900 mb-6">
+              Our Vision
+            </h3>
+            <p class="leading-relaxed text-gray-700">
+              To be the most trusted and preferred interior design brand, known for creating inspiring spaces that enhance the quality of life. We envision a future where every home reflects the unique personality and aspirations of its owners, designed with passion and built to last.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+      <div class="container mx-auto text-center px-4">
+        <p class="text-sm mb-4">Follow us on:</p>
+        <div class="flex justify-center space-x-6 mb-6">
+          <a href="#" class="hover:text-yellow-500">Instagram</a>
+          <a href="#" class="hover:text-yellow-500">Facebook</a>
+          <a href="#" class="hover:text-yellow-500">WhatsApp</a>
+        </div>
+        <p class="text-sm text-gray-400">
+          © 2025 Vantop Kitchen & Top. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
