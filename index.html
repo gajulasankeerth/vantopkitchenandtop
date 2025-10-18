@@ -80,6 +80,7 @@
         <a href="index.html" class="font-playfair text-2xl font-bold text-gray-900"
           >Vantop Kitchen & Top</a
         >
+        <!-- Desktop Menu -->
         <ul class="hidden md:flex space-x-8 font-poppins">
           <li><a href="index.html" class="text-yellow-600 font-semibold">Home</a></li>
           <li><a href="about.html" class="hover:text-yellow-600">About</a></li>
@@ -88,7 +89,28 @@
           <li><a href="testimonials.html" class="hover:text-yellow-600">Testimonials</a></li>
           <li><a href="contact.html" class="hover:text-yellow-600">Contact</a></li>
         </ul>
+
+        <!-- Hamburger Button -->
+        <div class="md:hidden">
+          <button id="hamburger" class="focus:outline-none">
+            <svg class="w-8 h-8 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
       </nav>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+        <ul class="flex flex-col space-y-2 p-4 font-poppins">
+          <li><a href="index.html" class="text-yellow-600 font-semibold block">Home</a></li>
+          <li><a href="about.html" class="hover:text-yellow-600 block">About</a></li>
+          <li><a href="services.html" class="hover:text-yellow-600 block">Services</a></li>
+          <li><a href="projects.html" class="hover:text-yellow-600 block">Projects</a></li>
+          <li><a href="testimonials.html" class="hover:text-yellow-600 block">Testimonials</a></li>
+          <li><a href="contact.html" class="hover:text-yellow-600 block">Contact</a></li>
+        </ul>
+      </div>
     </header>
 
     <!-- Hero Section -->
@@ -243,5 +265,15 @@
         </p>
       </div>
     </footer>
+
+    <!-- Hamburger Script -->
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      hamburger.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
   </body>
 </html>
