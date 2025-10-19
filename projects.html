@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Projects | Vantop Kitchen & Top</title>
+  <title>Our Projects | Vantop Kitchen & Bath</title>
   <meta name="description" content="Explore our portfolio of beautifully crafted kitchens, wardrobes, and interiors.">
 
   <!-- Tailwind CSS -->
@@ -27,17 +27,42 @@
 
   <!-- Navigation -->
   <header class="fixed w-full bg-white shadow-elegant z-50">
-    <nav class="container mx-auto flex justify-between items-center p-4">
-      <a href="index.html" class="font-playfair text-2xl font-bold text-gray-900">Vantop Kitchen & Top</a>
-      <ul class="hidden md:flex space-x-8 font-poppins">
-        <li><a href="index.html" class="text-yellow-600 font-semibold">Home</a></li>
-        <li><a href="about.html" class="hover:text-yellow-600">About</a></li>
-        <li><a href="services.html" class="hover:text-yellow-600">Services</a></li>
-        <li><a href="projects.html" class="hover:text-yellow-600">Projects</a></li>
-        <li><a href="contact.html" class="hover:text-yellow-600">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+      <nav class="container mx-auto flex justify-between items-center p-4">
+        <a href="index.html" class="font-playfair text-2xl font-bold text-gray-900"
+          >Vantop Kitchen & Bath</a
+        >
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-8 font-poppins">
+          <li><a href="index.html" class="hover:text-yellow-600">Home</a></li>
+          <li><a href="about.html" class="hover:text-yellow-600">About</a></li>
+          <li><a href="services.html" class="hover:text-yellow-600">Services</a></li>
+          <li><a href="projects.html" class="text-yellow-600 font-semibold">Projects</a></li>
+          <li><a href="testimonials.html" class="hover:text-yellow-600">Testimonials</a></li>
+          <li><a href="contact.html" class="hover:text-yellow-600">Contact</a></li>
+        </ul>
+
+        <!-- Hamburger Button -->
+        <div class="md:hidden">
+          <button id="hamburger" class="focus:outline-none">
+            <svg class="w-8 h-8 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+        <ul class="flex flex-col space-y-2 p-4 font-poppins">
+          <li><a href="index.html" class="hover:text-yellow-600 block">Home</a></li>
+          <li><a href="about.html" class="hover:text-yellow-600 block">About</a></li>
+          <li><a href="services.html" class="hover:text-yellow-600 block">Services</a></li>
+          <li><a href="projects.html" class="text-yellow-600 font-semibold block">Projects</a></li>
+          <li><a href="testimonials.html" class="hover:text-yellow-600 block">Testimonials</a></li>
+          <li><a href="contact.html" class="hover:text-yellow-600 block">Contact</a></li>
+        </ul>
+      </div>
+    </header>
 
   <!-- Hero Section -->
   <section class="pt-32 pb-16 bg-gray-50 text-center">
@@ -47,7 +72,7 @@
       </h1>
       <div class="w-24 h-1 bg-yellow-600 mx-auto mb-6"></div>
       <p class="text-xl text-gray-600 max-w-2xl mx-auto animate-fade-in">
-        Explore our portfolio of beautifully crafted kitchens, wardrobes, and interiors
+        Explore our portfolio of beautifully crafted kitchens, bathrooms, wardrobes, and interiors
       </p>
     </div>
   </section>
@@ -58,6 +83,16 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
 
         <!-- Example Project Card -->
+          <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-elegant transition-all duration-300 animate-scale-in aspect-[4/3]">
+          <img src="assets/images/expert-team.jpeg" alt="Modern L-shaped modular kitchen with white cabinets"
+               class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+            <div class="p-6 w-full">
+              <p class="text-sm text-yellow-600 mb-2">Modular Kitchen</p>
+              <h3 class="font-playfair text-2xl font-bold text-white">Premium Kitchen Design</h3>
+            </div>
+          </div>
+        </div>
         <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-elegant transition-all duration-300 animate-scale-in aspect-[4/3]">
           <img src="assets/images/kitchen-project-1.jpg" alt="Modern L-shaped modular kitchen with white cabinets"
                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
@@ -125,6 +160,51 @@
         </div>
 
         <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-elegant transition-all duration-300 animate-scale-in aspect-[4/3]">
+          <img src="assets/images/bathroom-project-1.jpg" alt="Bathrrom project 1"
+               class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+            <div class="p-6 w-full">
+              <p class="text-sm text-yellow-600 mb-2">Bathroom</p>
+              <h3 class="font-playfair text-2xl font-bold text-white">Contemporary Bathroom</h3>
+            </div>
+          </div>
+        </div>
+
+         <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-elegant transition-all duration-300 animate-scale-in aspect-[4/3]">
+          <img src="assets/images/bathroom-project-2.jpg" alt="Bathrrom project 1"
+               class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+            <div class="p-6 w-full">
+              <p class="text-sm text-yellow-600 mb-2">Bathroom</p>
+              <h3 class="font-playfair text-2xl font-bold text-white">Luxury Spa Bathroom</h3>
+            </div>
+          </div>
+        </div>
+
+         <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-elegant transition-all duration-300 animate-scale-in aspect-[4/3]">
+          <img src="assets/images/bathroom-project-3.jpg" alt="Bathrrom project 1"
+               class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+            <div class="p-6 w-full">
+              <p class="text-sm text-yellow-600 mb-2">Bathroom</p>
+              <h3 class="font-playfair text-2xl font-bold text-white">Smart Bathroom Design</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-elegant transition-all duration-300 animate-scale-in aspect-[4/3]">
+          <img src="assets/images/bathroom-project-4.jpg" alt="Bathrrom project 1"
+               class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+            <div class="p-6 w-full">
+              <p class="text-sm text-yellow-600 mb-2">Bathroom</p>
+              <h3 class="font-playfair text-2xl font-bold text-white">Contemporary Bathroom</h3>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-elegant transition-all duration-300 animate-scale-in aspect-[4/3]">
           <img src="assets/images/interior-project-1.jpg" alt="Modern living room interior"
                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
           <div class="absolute inset-0 bg-gradient-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
@@ -145,6 +225,27 @@
             </div>
           </div>
         </div>
+         <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-elegant transition-all duration-300 animate-scale-in aspect-[4/3]">
+          <img src="assets/images/kitchen-project-new2.jpeg" alt="Luxury kitchen with island and marble countertop"
+               class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+            <div class="p-6 w-full">
+              <p class="text-sm text-yellow-600 mb-2">Modular Kitchen</p>
+              <h3 class="font-playfair text-2xl font-bold text-white">Custom Kitchen Design</h3>
+            </div>
+          </div>
+        </div>
+         <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-elegant transition-all duration-300 animate-scale-in aspect-[4/3]">
+          <img src="assets/images/Budget-kitchen.jpeg" alt="Luxury kitchen with island and marble countertop"
+               class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+            <div class="p-6 w-full">
+              <p class="text-sm text-yellow-600 mb-2">Modular Kitchen</p>
+              <h3 class="font-playfair text-2xl font-bold text-white">Budget Friendly Kitchen Design</h3>
+            </div>
+          </div>
+        </div>
+        
 
       </div>
     </div>
@@ -176,9 +277,16 @@
         <a href="#" class="hover:text-yellow-500">Facebook</a>
         <a href="#" class="hover:text-yellow-500">WhatsApp</a>
       </div>
-      <p class="text-sm text-gray-400">© 2025 Vantop Kitchen & Top. All rights reserved.</p>
+      <p class="text-sm text-gray-400">© 2025 Vantop Kitchen & Bath. All rights reserved.</p>
     </div>
   </footer>
+   <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 
 </body>
 </html>
