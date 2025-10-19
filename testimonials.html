@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Client Testimonials | Vantop Kitchen & Top</title>
-  <meta name="description" content="Hear what our satisfied clients have to say about Vantop Kitchen & Top.">
+  <title>Client Testimonials | Vantop Kitchen & Bath</title>
+  <meta name="description" content="Hear what our satisfied clients have to say about Vantop Kitchen & Bath.">
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -35,16 +35,38 @@
   <!-- Navigation -->
   <header class="fixed w-full bg-white shadow-elegant z-50">
     <nav class="container mx-auto flex justify-between items-center p-4">
-      <a href="index.html" class="font-playfair text-2xl font-bold text-gray-900">Vantop Kitchen & Top</a>
+      <a href="index.html" class="font-playfair text-2xl font-bold text-gray-900">Vantop Kitchen & Bath</a>
+      <!-- Desktop Menu -->
       <ul class="hidden md:flex space-x-8 font-poppins">
-        <li><a href="index.html" class="text-yellow-600 font-semibold">Home</a></li>
+        <li><a href="index.html" class="hover:text-yellow-600">Home</a></li>
         <li><a href="about.html" class="hover:text-yellow-600">About</a></li>
         <li><a href="services.html" class="hover:text-yellow-600">Services</a></li>
         <li><a href="projects.html" class="hover:text-yellow-600">Projects</a></li>
-        <li><a href="testimonials.html" class="hover:text-yellow-600">Testimonials</a></li>
+        <li><a href="testimonials.html" class="text-yellow-600 font-semibold">Testimonials</a></li>
         <li><a href="contact.html" class="hover:text-yellow-600">Contact</a></li>
       </ul>
+
+      <!-- Hamburger Button -->
+      <div class="md:hidden">
+        <button id="hamburger" class="focus:outline-none">
+          <svg class="w-8 h-8 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
     </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+      <ul class="flex flex-col space-y-2 p-4 font-poppins">
+        <li><a href="index.html" class="text-yellow-600 font-semibold block">Home</a></li>
+        <li><a href="about.html" class="hover:text-yellow-600 block">About</a></li>
+        <li><a href="services.html" class="hover:text-yellow-600 block">Services</a></li>
+        <li><a href="projects.html" class="hover:text-yellow-600 block">Projects</a></li>
+        <li><a href="testimonials.html" class="hover:text-yellow-600 block">Testimonials</a></li>
+        <li><a href="contact.html" class="hover:text-yellow-600 block">Contact</a></li>
+      </ul>
+    </div>
   </header>
 
   <!-- Hero Section -->
@@ -98,7 +120,7 @@
             </div>
           </div>
           <p class="text-gray-800 mb-6 leading-relaxed">
-            "Vantop Kitchen & Top transformed our outdated kitchen into a modern masterpiece. Their attention to detail and quality of materials is outstanding. The entire team was professional, and the project was completed on time. Highly recommended!"
+            "Vantop Kitchen & Bath transformed our outdated kitchen into a modern masterpiece. Their attention to detail and quality of materials is outstanding. The entire team was professional, and the project was completed on time. Highly recommended!"
           </p>
           <div class="border-t border-border pt-4">
             <h4 class="font-playfair text-lg font-bold text-primary">Sarah Johnson</h4>
@@ -159,9 +181,16 @@
         <a href="#" class="hover:text-yellow-500">Facebook</a>
         <a href="#" class="hover:text-yellow-500">WhatsApp</a>
       </div>
-      <p class="text-sm text-gray-400">© 2025 Vantop Kitchen & Top. All rights reserved.</p>
+      <p class="text-sm text-gray-400">© 2025 Vantop Kitchen & Bath. All rights reserved.</p>
     </div>
   </footer>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 
 </body>
 </html>
