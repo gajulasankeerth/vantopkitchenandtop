@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New Interior Design Enquiry from {{Name}}</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f4f4;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #d4a574 0%, #c89550 100%);
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(212, 165, 116, 0.2);
+        }
+        
+        .header h1 {
+            margin: 0;
+            color: #ffffff;
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header p {
+            margin: 8px 0 0 0;
+            color: #fff8e7;
+            font-size: 14px;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .intro-text {
+            color: #2c3e50;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 0 0 30px 0;
+        }
+        
+        .details-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 0 30px 0;
+        }
+        
+        .details-table td {
+            padding: 15px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .details-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .label {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            width: 140px;
+            vertical-align: top;
+        }
+        
+        .value {
+            color: #34495e;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        
+        .message-box {
+            background: linear-gradient(135deg, #fef9f0 0%, #fdf5e6 100%);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #d4a574;
+            box-shadow: 0 2px 8px rgba(212, 165, 116, 0.1);
+        }
+        
+        .message-label {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin: 0 0 10px 0;
+        }
+        
+        .message-text {
+            color: #34495e;
+            font-size: 15px;
+            line-height: 1.6;
+            margin: 0;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        
+        .footer {
+            background: linear-gradient(135deg, #fef9f0 0%, #fcf4e8 100%);
+            padding: 30px;
+            text-align: center;
+            border-top: 2px solid #e8d5bc;
+        }
+        
+        .footer-brand {
+            color: #c89550;
+            font-size: 17px;
+            font-weight: 700;
+            margin: 0 0 5px 0;
+            letter-spacing: 0.3px;
+        }
+        
+        .footer-text {
+            color: #9b7e58;
+            font-size: 13px;
+            margin: 0;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .details-table td {
+                display: block;
+                width: 100%;
+                padding: 10px 0;
+            }
+            
+            .label {
+                width: 100%;
+                margin-bottom: 5px;
+            }
+            
+            .footer {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #f4f4f4; padding: 20px 0;">
+        <tr>
+            <td align="center">
+                <div class="email-container">
+                    <!-- Header -->
+                    <div class="header">
+                        <h1>New Interior Design Enquiry</h1>
+                        <p>You have received a new project enquiry</p>
+                    </div>
+                    
+                    <!-- Content -->
+                    <div class="content">
+                        <p class="intro-text">
+                            A potential client has submitted an enquiry through your website. Please review the details below and respond promptly.
+                        </p>
+                        
+                        <!-- Client Details Table -->
+                        <table class="details-table" role="presentation" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td class="label">Name</td>
+                                <td class="value">{{name}}</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Email</td>
+                                <td class="value">{{email}}</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Phone</td>
+                                <td class="value">{{phone}}</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Location</td>
+                                <td class="value">{{location}}</td>
+                            </tr>
+                            <tr>
+                                <td class="label">Project Type</td>
+                                <td class="value">{{projectType}}</td>
+                            </tr>
+                        </table>
+                        
+                        <!-- Message Section -->
+                        <div class="message-box">
+                            <p class="message-label">Message</p>
+                            <p class="message-text">{{message}}</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Footer -->
+                    <div class="footer">
+                        <p class="footer-brand">Vantop Kitchen & Bath</p>
+                        <p class="footer-text">&copy; 2025 All rights reserved</p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
