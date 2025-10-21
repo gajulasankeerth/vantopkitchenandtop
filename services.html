@@ -1,234 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services | Vantop Kitchen & Bath</title>
-  <meta name="description" content="Explore Vantop Kitchen & Bath services: modular kitchens, countertops, custom wardrobes, and complete interiors.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services | Vantop Kitchen & Bath</title>
+    <meta
+      name="description"
+      content="Explore Vantop Kitchen & Bath services: modular kitchens, countertops, custom cabinets, and complete interiors."
+    />
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <style>
-    body { font-family: 'Poppins', sans-serif; }
-    .font-playfair { font-family: 'Playfair Display', serif; }
-    .animate-fade-in { animation: fadeIn 1s ease-in-out; }
-    .animate-slide-in { animation: slideIn 1s ease-in-out; }
-    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-    @keyframes slideIn { from { opacity: 0; transform: translateX(-30px); } to { opacity: 1; transform: translateX(0); } }
-    .shadow-elegant { box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
-  </style>
-</head>
-<body class="bg-white text-gray-800">
-
-  <!-- Navigation -->
-  <header class="fixed w-full bg-white shadow-elegant z-50">
-    <nav class="container mx-auto flex justify-between items-center p-4">
-      <a href="index.html" class="font-playfair text-2xl font-bold text-gray-900">Vantop Kitchen & Bath</a>
-      <!-- Desktop Menu -->
-      <ul class="hidden md:flex space-x-8 font-poppins">
-        <li><a href="index.html" class="hover:text-yellow-600">Home</a></li>
-        <li><a href="about.html" class="hover:text-yellow-600">About</a></li>
-        <li><a href="services.html" class="text-yellow-600 font-semibold">Services</a></li>
-        <li><a href="projects.html" class="hover:text-yellow-600">Projects</a></li>
-        <li><a href="testimonials.html" class="hover:text-yellow-600">Testimonials</a></li>
-        <li><a href="contact.html" class="hover:text-yellow-600">Contact</a></li>
-      </ul>
-
-      <!-- Hamburger Button -->
-      <div class="md:hidden">
-        <button id="hamburger" class="focus:outline-none">
-          <svg class="w-8 h-8 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
-    </nav>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
-      <ul class="flex flex-col space-y-2 p-4 font-poppins">
-        <li><a href="index.html" class="text-yellow-600 font-semibold block">Home</a></li>
-        <li><a href="about.html" class="hover:text-yellow-600 block">About</a></li>
-        <li><a href="services.html" class="hover:text-yellow-600 block">Services</a></li>
-        <li><a href="projects.html" class="hover:text-yellow-600 block">Projects</a></li>
-        <li><a href="testimonials.html" class="hover:text-yellow-600 block">Testimonials</a></li>
-        <li><a href="contact.html" class="hover:text-yellow-600 block">Contact</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="pt-32 pb-16 bg-gray-50 text-center">
-    <div class="container mx-auto px-4">
-      <h1 class="font-playfair text-5xl md:text-6xl font-bold text-gray-900 mb-6 animate-fade-in">Our Services</h1>
-      <div class="w-24 h-1 bg-yellow-600 mx-auto mb-6"></div>
-      <p class="text-xl text-gray-600 max-w-2xl mx-auto animate-fade-in">
-        Comprehensive interior solutions designed to transform your home
-      </p>
-    </div>
-  </section>
-
-  <!-- Services Content -->
-  <section class="py-20 bg-white">
-    <div class="container mx-auto px-4 space-y-20 max-w-6xl">
-
-      <!-- Service Items -->
-      <!-- Modular Kitchens -->
-      <div class="md:flex md:items-center md:gap-12 animate-slide-in">
-        <img src="assets/images/kitchen-project-2.jpg" alt="Modular Kitchens" class="rounded-lg shadow-elegant md:w-1/2">
-        <div class="space-y-6 md:w-1/2 md:pl-8 mt-8 md:mt-0">
-          <div class="flex items-center space-x-4">
-            <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center"><svg style="color:hsl(45 85% 60%)" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wrench w-8 h-8 text-accent"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
-            <h2 class="font-playfair text-4xl font-bold text-gray-900">Modular Kitchens</h2>
-          </div>
-          <p class="text-lg text-gray-800">
-            Modern, space-efficient kitchen designs tailored to your lifestyle and preferences
-          </p>
-          <div class="border border-yellow-200 rounded-lg p-6">
-            <h3 class="font-playfair text-2xl text-gray-900 mb-4">What We Offer</h3>
-            <ul class="space-y-2">
-              <li>✓ Custom cabinet designs and layouts</li>
-              <li>✓ Premium hardware and fittings</li>
-              <li>✓ Soft-close mechanisms and organizers</li>
-              <li>✓ Space optimization solutions</li>
-              <li>✓ L-shaped, U-shaped, and island kitchens</li>
-              <li>✓ Integrated appliance installations</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Premium Countertops -->
-      <div class="md:flex md:items-center md:gap-12 md:flex-row-reverse animate-slide-in">
-        <img src="assets/images/countertop-project-1.jpg" alt="Premium Countertops" class="rounded-lg shadow-elegant md:w-1/2">
-        <div class="space-y-6 md:w-1/2 md:pr-8 mt-8 md:mt-0">
-          <div class="flex items-center space-x-4">
-            <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center"><svg style="color:hsl(45 85% 60%)"
-              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-8 h-8 text-accent"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg></div>
-            <h2 class="font-playfair text-4xl font-bold text-gray-900">Premium Countertops</h2>
-          </div>
-          <p class="text-lg text-gray-800">
-            Exquisite countertop installations using the finest materials
-          </p>
-          <div class="border border-yellow-200 rounded-lg p-6">
-            <h3 class="font-playfair text-2xl text-gray-900 mb-4">What We Offer</h3>
-            <ul class="space-y-2">
-              <li>✓ Quartz countertops - durable and elegant</li>
-              <li>✓ Granite surfaces - natural beauty</li>
-              <li>✓ Marble finishes - timeless luxury</li>
-              <li>✓ Waterfall edge designs</li>
-              <li>✓ Custom edge profiling</li>
-              <li>✓ Heat and stain resistant materials</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Bath Room -->
-      <div class="md:flex md:items-center md:gap-12 animate-slide-in">
-        <img src="assets/images/bathroom-project-2.jpg" alt="Custom Wardrobes" class="rounded-lg shadow-elegant md:w-1/2">
-        <div class="space-y-6 md:w-1/2 md:pl-8 mt-8 md:mt-0">
-          <div class="flex items-center space-x-4">
-            <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center"><svg style="color:hsl(45 85% 60%)" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bath w-8 h-8 text-accent"><path d="M10 4 8 6"></path><path d="M17 19v2"></path><path d="M2 12h20"></path><path d="M7 19v2"></path><path d="M9 5 7.621 3.621A2.121 2.121 0 0 0 4 5v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"></path></svg></div>
-            <h2 class="font-playfair text-4xl font-bold text-gray-900">Premium Bathrooms</h2>
-          </div>
-          <p class="text-lg text-gray-800">
-            Luxurious bathroom designs that combine elegance with functionality
-          </p>
-          <div class="border border-yellow-200 rounded-lg p-6">
-            <h3 class="font-playfair text-2xl text-gray-900 mb-4">What We Offer</h3>
-            <ul class="space-y-2">
-              <li>✓ Modern vanity and sink installations</li>
-              <li>✓ Walk-in showers and bathtub designs</li>
-              <li>✓ Premium tiles and waterproofing</li>
-              <li>✓ Lighting and ventilation systems</li>
-              <li>✓ Smart bathroom fixtures</li>
-              <li>✓ Complete bathroom renovations</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Complete Interiors -->
-      <div class="md:flex md:items-center md:gap-12 md:flex-row-reverse animate-slide-in">
-        <img src="assets/images/interior-project-1.jpg" alt="Complete Interiors" class="rounded-lg shadow-elegant md:w-1/2">
-        <div class="space-y-6 md:w-1/2 md:pr-8 mt-8 md:mt-0">
-          <div class="flex items-center space-x-4">
-            <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center"><svg style="color:hsl(45 85% 60%)" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house w-8 h-8 text-accent"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg></div>
-            <h2 class="font-playfair text-4xl font-bold text-gray-900">Complete Interiors</h2>
-          </div>
-          <p class="text-lg text-gray-800">
-            Full-service interior design for living rooms, bedrooms, and bathrooms
-          </p>
-          <div class="border border-yellow-200 rounded-lg p-6">
-            <h3 class="font-playfair text-2xl text-gray-900 mb-4">What We Offer</h3>
-            <ul class="space-y-2">
-              <li>✓ Living room furniture and layout</li>
-              <li>✓ Bedroom design and storage</li>
-              <li>✓ Bathroom vanities and fixtures</li>
-              <li>✓ Wall paneling and accents</li>
-              <li>✓ Lighting design and installation</li>
-              <li>✓ Complete home makeovers</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-       <!-- Custom Wardrobes -->
-      <div class="md:flex md:items-center md:gap-12 animate-slide-in">
-        <img src="assets/images/wardrobe-project-1.jpg" alt="Custom Wardrobes" class="rounded-lg shadow-elegant md:w-1/2">
-        <div class="space-y-6 md:w-1/2 md:pl-8 mt-8 md:mt-0">
-          <div class="flex items-center space-x-4">
-            <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center"><svg style="color:hsl(45 85% 60%)" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-panels-top-left w-8 h-8 text-accent"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M3 9h18"></path><path d="M9 21V9"></path></svg></div>
-            <h2 class="font-playfair text-4xl font-bold text-gray-900">Custom Wardrobes</h2>
-          </div>
-          <p class="text-lg text-gray-800">
-            Personalized wardrobe solutions that maximize storage and style
-          </p>
-          <div class="border border-yellow-200 rounded-lg p-6">
-            <h3 class="font-playfair text-2xl text-gray-900 mb-4">What We Offer</h3>
-            <ul class="space-y-2">
-              <li>✓ Sliding door wardrobes</li>
-              <li>✓ Hinged door designs</li>
-              <li>✓ Walk-in closet systems</li>
-              <li>✓ Interior organizers and accessories</li>
-              <li>✓ Mirror and glass panel options</li>
-              <li>✓ LED lighting integration</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="py-16 bg-gray-50 text-center">
-    <div class="container mx-auto px-4">
-      <h2 class="font-playfair text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-        Ready to Transform Your Space?
-      </h2>
-      <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
-        Get in touch with us today for a free consultation and quote
-      </p>
-      <a href="contact.html">
-        <button class="bg-yellow-600 text-white px-8 py-4 rounded-lg shadow-elegant hover:bg-yellow-500 transition">
-          Request a Quote
-        </button>
-      </a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-10">
-    <div class="container mx-auto text-center px-4">
-      <p class="text-sm mb-4">Follow us on:</p>
-      <div class="flex justify-center space-x-6 mb-6">
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .font-playfair {
+        font-family: "Playfair Display", serif;
+      }
+      .animate-fade-in {
+        animation: fadeIn 1s ease-in-out;
+      }
+      .animate-slide-in {
+        animation: slideIn 1s ease-in-out;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes slideIn {
+        from {
+          opacity: 0;
+          transform: translateX(-30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      .shadow-elegant {
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <header class="fixed w-full bg-white shadow-elegant z-50">
+      <nav class="container mx-auto flex justify-between items-center p-4">
         <a
+          href="index.html"
+          class="font-playfair text-2xl font-bold text-gray-900"
+          >Vantop Kitchen & Bath</a
+        >
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-8 font-poppins">
+          <li><a href="index.html" class="hover:text-yellow-600">Home</a></li>
+          <li><a href="about.html" class="hover:text-yellow-600">About</a></li>
+          <li>
+            <a href="services.html" class="text-yellow-600 font-semibold"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="projects.html" class="hover:text-yellow-600">Projects</a>
+          </li>
+          <li>
+            <a href="testimonials.html" class="hover:text-yellow-600"
+              >Testimonials</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="hover:text-yellow-600">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Hamburger Button -->
+        <div class="md:hidden">
+          <button id="hamburger" class="focus:outline-none">
+            <svg
+              class="w-8 h-8 text-gray-900"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+        <ul class="flex flex-col space-y-2 p-4 font-poppins">
+          <li>
+            <a href="index.html" class="text-yellow-600 font-semibold block"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="hover:text-yellow-600 block">About</a>
+          </li>
+          <li>
+            <a href="services.html" class="hover:text-yellow-600 block"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="projects.html" class="hover:text-yellow-600 block"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="testimonials.html" class="hover:text-yellow-600 block"
+              >Testimonials</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="hover:text-yellow-600 block"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 bg-gray-50 text-center">
+      <div class="container mx-auto px-4">
+        <h1
+          class="font-playfair text-5xl md:text-6xl font-bold text-gray-900 mb-6 animate-fade-in"
+        >
+          Our Services
+        </h1>
+        <div class="w-24 h-1 bg-yellow-600 mx-auto mb-6"></div>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto animate-fade-in">
+          Comprehensive interior solutions designed to transform your home
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Content -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4 space-y-20 max-w-6xl">
+        <!-- Service Items -->
+        <!-- Modular Kitchens -->
+        <div class="md:flex md:items-center md:gap-12 animate-slide-in">
+          <img
+            src="assets/images/kitchen-project-2.jpg"
+            alt="Modular Kitchens"
+            class="rounded-lg shadow-elegant md:w-1/2"
+          />
+          <div class="space-y-6 md:w-1/2 md:pl-8 mt-8 md:mt-0">
+            <div class="flex items-center space-x-4">
+              <div
+                class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center"
+              >
+                <svg
+                  style="color: hsl(45 85% 60%)"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-wrench w-8 h-8 text-accent"
+                >
+                  <path
+                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="font-playfair text-4xl font-bold text-gray-900">
+                Modular Kitchens
+              </h2>
+            </div>
+            <p class="text-lg text-gray-800">
+              Modern, space-efficient kitchen designs tailored to your lifestyle
+              and preferences
+            </p>
+            <div class="border border-yellow-200 rounded-lg p-6">
+              <h3 class="font-playfair text-2xl text-gray-900 mb-4">
+                What We Offer
+              </h3>
+              <ul class="space-y-2">
+                <li>✓ Custom cabinet designs and layouts</li>
+                <li>✓ Premium hardware and fittings</li>
+                <li>✓ Soft-close mechanisms and organizers</li>
+                <li>✓ Space optimization solutions</li>
+                <li>✓ L-shaped, U-shaped, and island kitchens</li>
+                <li>✓ Integrated appliance installations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Premium Countertops -->
+        <div
+          class="md:flex md:items-center md:gap-12 md:flex-row-reverse animate-slide-in"
+        >
+          <img
+            src="assets/images/countertop-project-1.jpg"
+            alt="Premium Countertops"
+            class="rounded-lg shadow-elegant md:w-1/2"
+          />
+          <div class="space-y-6 md:w-1/2 md:pr-8 mt-8 md:mt-0">
+            <div class="flex items-center space-x-4">
+              <div
+                class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center"
+              >
+                <svg
+                  style="color: hsl(45 85% 60%)"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-sparkles w-8 h-8 text-accent"
+                >
+                  <path
+                    d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"
+                  ></path>
+                  <path d="M20 3v4"></path>
+                  <path d="M22 5h-4"></path>
+                  <path d="M4 17v2"></path>
+                  <path d="M5 18H3"></path>
+                </svg>
+              </div>
+              <h2 class="font-playfair text-4xl font-bold text-gray-900">
+                Premium Countertops
+              </h2>
+            </div>
+            <p class="text-lg text-gray-800">
+              Exquisite countertop installations using the finest materials
+            </p>
+            <div class="border border-yellow-200 rounded-lg p-6">
+              <h3 class="font-playfair text-2xl text-gray-900 mb-4">
+                What We Offer
+              </h3>
+              <ul class="space-y-2">
+                <li>✓ Quartz countertops - durable and elegant</li>
+                <li>✓ Granite surfaces - natural beauty</li>
+                <li>✓ Marble finishes - timeless luxury</li>
+                <li>✓ Waterfall edge designs</li>
+                <li>✓ Custom edge profiling</li>
+                <li>✓ Heat and stain resistant materials</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bath Room -->
+        <div class="md:flex md:items-center md:gap-12 animate-slide-in">
+          <img
+            src="assets/images/cabinet-project.jpg"
+            alt="Custom cabinets"
+            class="rounded-lg shadow-elegant md:w-1/2"
+          />
+          <div class="space-y-6 md:w-1/2 md:pl-8 mt-8 md:mt-0">
+            <div class="flex items-center space-x-4">
+              <div
+                class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center"
+              >
+                <svg
+                  style="color: hsl(45 85% 60%)"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-package w-8 h-8 text-accent"
+                >
+                  <path
+                    d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"
+                  ></path>
+                  <path d="M12 22V12"></path>
+                  <path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7"></path>
+                  <path d="m7.5 4.27 9 5.15"></path>
+                </svg>
+              </div>
+              <h2 class="font-playfair text-4xl font-bold text-gray-900">
+                Kitchen Cabinets
+              </h2>
+            </div>
+            <p class="text-lg text-gray-800">
+              Premium kitchen cabinet solutions with superior craftsmanship and
+              storage
+            </p>
+            <div class="border border-yellow-200 rounded-lg p-6">
+              <h3 class="font-playfair text-2xl text-gray-900 mb-4">
+                What We Offer
+              </h3>
+              <ul class="space-y-2">
+                <li>✓ Upper and lower cabinet designs</li>
+                <li>✓ Hinged door designs</li>
+                <li>✓ Soft-close hinges and drawer systems</li>
+                <li>✓ Pull-out shelves and organizers</li>
+                <li>✓ Under-cabinet lighting integration</li>
+                <li>✓ Custom finishes and hardware</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Custom Cabinets -->
+        <div
+          class="md:flex md:items-center md:gap-12 md:flex-row-reverse animate-slide-in"
+        >
+          <img
+            src="assets/images/bathroom-project-2.jpg"
+            alt="Custom Cabinets"
+            class="rounded-lg shadow-elegant md:w-1/2"
+          />
+          <div class="space-y-6 md:w-1/2 md:pr-8 mt-8 md:mt-0">
+            <div class="flex items-center space-x-4">
+              <div
+                class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center"
+              >
+                <svg
+                  style="color: hsl(45 85% 60%)"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-bath w-8 h-8 text-accent"
+                >
+                  <path d="M10 4 8 6"></path>
+                  <path d="M17 19v2"></path>
+                  <path d="M2 12h20"></path>
+                  <path d="M7 19v2"></path>
+                  <path
+                    d="M9 5 7.621 3.621A2.121 2.121 0 0 0 4 5v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="font-playfair text-4xl font-bold text-gray-900">
+                Premium Bathrooms
+              </h2>
+            </div>
+            <p class="text-lg text-gray-800">
+              Luxurious bathroom designs that combine elegance with
+              functionality
+            </p>
+            <div class="border border-yellow-200 rounded-lg p-6">
+              <h3 class="font-playfair text-2xl text-gray-900 mb-4">
+                What We Offer
+              </h3>
+              <ul class="space-y-2">
+                <li>✓ Modern vanity and sink installations</li>
+                <li>✓ Walk-in showers and bathtub designs</li>
+                <li>✓ Premium tiles and waterproofing</li>
+                <li>✓ Lighting and ventilation systems</li>
+                <li>✓ Smart bathroom fixtures</li>
+                <li>✓ Complete bathroom renovations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gray-50 text-center">
+      <div class="container mx-auto px-4">
+        <h2
+          class="font-playfair text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+        >
+          Ready to Transform Your Space?
+        </h2>
+        <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+          Get in touch with us today for a free consultation and quote
+        </p>
+        <a href="contact.html">
+          <button
+            class="bg-yellow-600 text-white px-8 py-4 rounded-lg shadow-elegant hover:bg-yellow-500 transition"
+          >
+            Request a Quote
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+      <div class="container mx-auto text-center px-4">
+        <p class="text-sm mb-4">Follow us on:</p>
+        <div class="flex justify-center space-x-6 mb-6">
+          <a
             href="http://instagram.com/vantopkitchenandbath/?igsh=YmltdGpnZHllMG5t#"
             class="hover:text-yellow-500"
             target="_blank"
@@ -236,20 +427,20 @@
           >
             Instagram
           </a>
-        <a href="#" class="hover:text-yellow-500">Facebook</a>
-        <a href="#" class="hover:text-yellow-500">WhatsApp</a>
+          <a href="#" class="hover:text-yellow-500">Facebook</a>
+        </div>
+        <p class="text-sm text-gray-400">
+          © VantopKitchen & Bath. All rights reserved.
+        </p>
       </div>
-      <p class="text-sm text-gray-400">© 2025 Vantop Kitchen & Bath. All rights reserved.</p>
-    </div>
-  </footer>
+    </footer>
 
-  <script>
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobile-menu');
-    hamburger.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
-
-</body>
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobile-menu");
+      hamburger.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
 </html>
