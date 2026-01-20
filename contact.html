@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,12 +9,7 @@
       content="Get in touch with Vantop Kitchen & Bath for premium interior design, modular kitchens, and complete home solutions."
     />
     <!-- Favicon -->
-  <link
-    rel="icon"
-    type="image/png"
-    href="assets/images/logo.png"
-  />
-
+    <link rel="icon" type="image/png" href="assets/images/logo.png" />
 
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -196,9 +191,7 @@
                 </div>
                 <div>
                   <h3 class="font-semibold text-gray-900 mb-1">Address</h3>
-                  <p class="text-gray-600">
-                    Columbus, Ohio
-                  </p>
+                  <p class="text-gray-600">Columbus, Ohio</p>
                 </div>
               </div>
 
@@ -249,7 +242,7 @@
                 </div>
                 <div>
                   <h3 class="font-semibold text-gray-900 mb-1">Email</h3>
-                  <p class="text-gray-600">info@vantopkitchenandtop.com</p>
+                  <p class="text-gray-600">sales@vantopkitchenandbath.com</p>
                 </div>
               </div>
             </div>
@@ -331,7 +324,7 @@
                   <option value="Bathroom">Bathroom Renovation</option>
                   <option value="Wardrobe / Storage">Cabinets / Storage</option>
                   <option value="Countertops">Counter Tops</option>
-                  
+
                   <option value="Other">Other</option>
                 </select>
               </div>
@@ -383,7 +376,6 @@
             Instagram
           </a>
           <a href="#" class="hover:text-yellow-500">Facebook</a>
-          
         </div>
         <p class="text-sm text-gray-400">
           © VantopKitchen & Bath. All rights reserved.
@@ -448,14 +440,23 @@
         // If all validation passes
         formMsg.textContent = "Thank you! We'll get back to you soon.";
         formMsg.style.color = "green";
-        emailjs.sendForm('service_8zqjppe', 'template_49h05oh', form,'BRWgrd8jTHghU1gV4')
-          .then(function (response) {
-            status.innerHTML = "Message sent successfully!";
-            form.reset();
-          }, function (error) {
-            status.innerHTML = "Failed to send message. Please try again.";
-            console.error("EmailJS error:", error);
-          });
+        emailjs
+          .sendForm(
+            "service_8zqjppe",
+            "template_49h05oh",
+            form,
+            "BRWgrd8jTHghU1gV4",
+          )
+          .then(
+            function (response) {
+              status.innerHTML = "Message sent successfully!";
+              form.reset();
+            },
+            function (error) {
+              status.innerHTML = "Failed to send message. Please try again.";
+              console.error("EmailJS error:", error);
+            },
+          );
       });
     </script>
   </body>
